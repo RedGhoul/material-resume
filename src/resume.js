@@ -37,7 +37,7 @@ angular.module('Resume', ['ngMaterial'])
       <a ng-if="r.github" class="md-subhead page-subhead" ng-href="https://github.com/{{r.github}}" target="_blank">
         <i class="fa fa-lg fa-github"></i>{{r.github}}
       </a>
-      <a ng-if="r.linkedin" class="md-subhead page-subhead" ng-href="https://linkedin.com/in/{{r.linkedin}}-7ba249127" target="_blank">
+      <a ng-if="r.linkedin" class="md-subhead page-subhead" ng-href="www.linkedin.com/in/avaneesa" target="_blank">
         <i class="fa fa-lg fa-linkedin-square"></i>{{r.linkedin}}
       </a>
     </div>
