@@ -1,104 +1,128 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8">
-<title>Resume</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+<!DOCTYPE html>
+<html>
 
-<link href="src/resume.css" rel="stylesheet">
-<script src="https://unpkg.com/material-resume@1.0.1/resume.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+        href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
 
-</head><body ng-app="Resume" ng-cloak="">
+    <link href="src/resume.css" rel="stylesheet">
+    <script src="src/resume.js"></script>
+
+</head>
+
+<body ng-app="Resume" ng-cloak="">
     <resume>
-        <resume-heading website="somethings.blog" first-name="Avaneesa" last-name="Basappa" linkedin="Avaneesa" github="RedGhoul" email="avaneesab5@gmail.com" phone="289-946-2595">
+        <resume-heading website="avaneesa.me" first-name="Avaneesa" last-name="Basappa" linkedin="Avaneesa"
+            github="RedGhoul" email="avaneesab5@gmail.com" phone="289-946-2595">
         </resume-heading>
         <resume-body>
-            <resume-column flex="20">
-                <sidebar-category name="Education">
-                    <p>Graduating May 2019</p>
-                    <p>Electrical Engineering</p>
-                    <p>University of Ontario Institute of Technology</p>
-                </sidebar-category>
-                <sidebar-category name="Courses">
-                    <p>Object Oriented Programming and Design</p>
-                    <p>Computer Networks</p>
-                    <p>Microprocessor Systems Design</p>
-                    <p>Digital Systems</p>
-                    <p>Digital Signal Processing</p>
-                    <p>Modern Control Systems</p>
-                    <p>Design Principles and Project Management in Electrical Engineering</p>
-                </sidebar-category>
+            <resume-column flex="5">
+                
             </resume-column>
-            <resume-column flex="80">
+            <resume-column flex="95">
+                
                 <category name="Professional Experience">
-                    <category-item title="Software Development Intern" subtitle="IBM Digital Commerce - IBM Inc (May 2017 - Aug 2018)">
-                        <li>Researched and implemented an Angular 1.x to 4.x transtion plan for migrating legacy applications</li>
-                        <li>Built out Angular services using ngrx/store to reduce network calls by 30%</li>
-                        <li>Created Angular services and JEE Services to build out end to end features</li>
-                        <li>Reduced cross platform testing time by 30% by implementing a multithreaded framework to run JUnit tests in parallel</li>
-                        <li>Wrote custom New Relic integrations into Dockerized applications, to increase error detection rate by 70% using Python</li>
-                        <li>Provided production DevOps support to live customers using DC/OS, UCD, and Grey Log</li>
-                        <li>Increased error detection by 50% by creating a exception based class hierarchy, to handle UI errors</li>
+                    <category-item title="Software Development Intern"
+                        subtitle="IBM Digital Commerce - IBM Inc (May 2017 - Aug 2018)">
                         <li>Created an automated regression testing system using Docker, Selenium, and Concourse CI</li>
                         <li>Participated and collaborated in Code Reviews using GITLAB and Agile Processes</li>
+                        <li>Created end to end features using Angular and Java EE to interact with DB2</li>
+                        <li>Researched and implemented an Angular 1.x to 4.x transtion plan for migrating legacy
+                            applications</li>
+                        <li>Reduced cross platform testing time by 30% by implementing a multithreaded framework to run
+                            JUnit tests in parallel</li>
+                        <li>Provided production DevOps support to live customers using DC/OS, UCD, and Grey Log</li>
+                        <li>Increased error detection by 50% by creating a exception based class hierarchy, to handle UI
+                            errors</li>
                     </category-item>
-                    <category-item title="Software Development Intern" subtitle="Power Systems IT - Hydro One Networks Inc (Jan–Aug,2016)">
-                        <li>Rewrote several Web APIs to be more developer friendly, resulting in a 30% reduction in queries to ORACLE cluster, using WEB API 2 and C#</li>
-                        <li>Maintained several data-driven Web Forms applications written in VB.NET, using Visual studio 2005</li>
-                        <li>Increased the level of modularity and decoupling by refactoring class libraries using generics over object types to achieve a 50% code base reduction</li>
-                        <li>Developed in-house software testing tools using C# and Selenium to automate 40% of all UI testing</li>
-                        <li>Implemented a number Microsoft Azure services such as "Application Insights" and "App Service", to stream line development and deployment processes</li>
-                        <li>Researched and implemented No SQL DBs to provide a proof of concept, for future development</li>
+                    <category-item title="Software Development Intern"
+                        subtitle="Power Systems IT - Hydro One Networks Inc (Jan–Aug,2016)">
+                        <li>Consolidated several Web APIs, resulting in a 30% reduction in queries to ORACLE cluster,
+                            using WEB API 2 and C#</li>
+                        <li>Developed in-house software testing tools using C# and Selenium to automate 40% of all
+                                    functional UI testing</li>
+                        <li>Increased the level of modularity and decoupling by refactoring class libraries using
+                            generics over object types to achieve a 50% code base reduction</li>
+                        <li>Maintained a number Microsoft Azure services such as "Application Insights" and "App
+                            Service", to stream line development and deployment processes</li>
                         <li>Worked extensively with TOAD to query and maintain ORACLE Cluster</li>
                     </category-item>
-                    <category-item title="Software Development Intern" subtitle="Lines Engineering - Hydro One Networks Inc (Sept-Dec,2015)">
-                        <li>Developed tools to predict the extent of corrosion on transmission towers using localized weather data with a 90% accuracy</li>
-                        <li>Created in-house fuzzy logic software using C# to assist engineers and asset managers with transmission line maintenance and design resulting in a 15% material use reduction</li>
-                        <li>Worked on guidelines for non-destructive inexpensive asset management methods to serve as a screening method to reduce maintenance by 80%</li>
+                    <category-item title="Software Development Intern"
+                        subtitle="Lines Engineering - Hydro One Networks Inc (Sept-Dec,2015)">
+                        <li>Developed tools to predict the extent of corrosion on transmission towers using localized
+                            weather data with a 90% accuracy</li>
+                        <li>Created in-house fuzzy logic software using C# to assist engineers and asset managers with
+                            transmission line maintenance and design, resulting in a 15% material use reduction</li>
+                        <li>Worked on guidelines for non-destructive inexpensive asset management methods to serve as a
+                            screening method to reduce maintenance by 80%</li>
                     </category-item>
                 </category>
+                <category name="Education">
+                        <category-item title="University of Ontario Institute of Technology">
+                            <li>Electrical Engineering - Bachelor of Engineering - Graduated April - 2019</li>
+                        </category-item>
+                    </category>
                 <category name="Skills">
                     <category-item title="Technologies">
-                        <li><strong>Experienced with</strong> Web\ iOS\ Unity Development \ Tensor Flow \ AGILE Development \ Relational Database Management</li>
-                        <li><strong>Programming</strong> Javascript \ Python \ Java \ Swift \ C#</li>
-                        <li><strong>Databases</strong> ORACLE \ MongoDB \ MySQL \ PostgreSQL \ DB2 \ MSSQL</li>
-                        <li><strong>Frameworks</strong> Angular v6\ ASP.NET MVC\ Django\ Express.js \ JQuery</li>
-                        <li><strong>Hosting</strong> AWS \ AZURE \ HEROKU \ GCP </li>
+                        <li><strong>Languages</strong> Javascript \ Python \ Java \ C#</li>
+                        <li><strong>Frameworks</strong> Angular\ REACT \ ASP.NET MVC\ Django\ Express.js \ JQuery</li>
+                        <li><strong>Hosting</strong> AWS \ AZURE \ HEROKU </li>
+                        <li><strong>Databases</strong> ORACLE \ MongoDB \ DB2 \ MSSQL</li>
                     </category-item>
                 </category>
                 <category name="Projects">
+                    <category-item title="Portfolio CMS" subtitle="A easy and simple way to build your personal site">
+                        <li>Implements the most basic features of a CMS to easily organize and update my CV, as well as
+                            manage my show case of projects</li>
+                        <li>Written with JavaScript using Node.js, Express.js, EJS, and MongoDB. Hosted on HEROKU</li>
+                        <li>Live URL - <a href="http://www.avaneesa.me/">Live URL</a></li>
+                        <li>GitHub Repo - <a
+                                href="https://github.com/RedGhoul/PortfolioNodeWebsite">https://github.com/RedGhoul/PortfolioNodeWebsite</a>
+                        </li>
+                    </category-item>
+                    <category-item title="HighScore Service" subtitle="A SAS app designed for Game Engine Integration">
+                        <li>An easy way for video game developers to add leader boards to their games</li>
+                        <li>Written with JavaScript using Node.js, Express.js, EJS, and MongoDB. Hosted on HEROKU</li>
+                        <li>GitHub Repo - <a
+                                href="https://github.com/RedGhoul/HighScoreService">https://github.com/RedGhoul/HighScoreService</a>
+                        </li>
+                    </category-item>
                     <category-item title="Cognative Oncology Systems (COS)" subtitle="Capstone Project">
                         <li>Lets Oncologists determine the presense of tumors in prostates</li>
                         <li>Web interface written with C# using ASP.NET MVC, Razor Pages, JQuery. Hosted on AZURE</li>
-                        <li>Model created with Python using Tensor Flow. Hosted on GCP using Docker</li>
-                        <li><a href="https://drive.google.com/file/d/1Cq2aDDodgpEQJOsnw-im7EUw_AUnH70F/view?usp=sharing">An Overview of the Project</a></li>
-                        <li><a href="https://github.com/RedGhoul/COS_Systems">GitHub Repo</a></li>
+                        <li>Network created with Python using Tensor Flow. Hosted using Docker</li>
+                        <li>Overview Slides - <a
+                                href="https://drive.google.com/file/d/1Cq2aDDodgpEQJOsnw-im7EUw_AUnH70F/view?usp=sharing">https://drive.google.com/file/d/1Cq2aDDodgpEQJOsnw-im7EUw_AUnH70F/view?usp=sharing</a>
+                        </li>
+                        <li>GitHub Repo - <a
+                                href="https://github.com/RedGhoul/COS_Systems">https://github.com/RedGhoul/COS_Systems</a>
+                        </li>
                     </category-item>
-                    <category-item title="TUTS" subtitle="A easy and simple way to get help with your university classes">
-                        <li>A multi user social web application that lets tutors find students and vice versa</li>
-                        <li>Written with C# using ASP.NET MVC, Razor Pages. Hosted on AZURE</li>
-                        <li><a href="https://github.com/RedGhoul/Tuts">GitHub Repo</a></li>
-                    </category-item>
-                    <category-item title="Hermit Hacker" subtitle="iOS App that makes Hacker News enjoyable">
-                        <li>Hacker News without the comments, plus the ability to save the articles you want</li>
-                        <li>Implemented in Swift</li>
-                        <li><a href="https://github.com/RedGhoul/HermitHacker">GitHub Repo</a></li>
-                    </category-item>
-                    <category-item title="Casual iOS Games" subtitle="">
-                            <li><a href="https://itunes.apple.com/us/developer/avaneesa-basappa/id1425626717">My iOS App Store Developer Page</a></li>
-                            <li>A number of different little games I have made</li>
-                            <li>Written with C# using the Unity Game Engine</li>
+                    <category-item title="iOS Games" subtitle="Created a number of different iOS games">
+                        <li>Created all ArtWork, Logos, and icons via Adobe Photoshop</li>
+                        <li>Written with C# using the Unity Game Engine</li>
+                        <li>My iOS App Store Developer Page - <a
+                                href="https://itunes.apple.com/us/developer/avaneesa-basappa/id1425626717">https://itunes.apple.com/us/developer/avaneesa-basappa/id1425626717</a>
+                        </li>
                     </category-item>
                 </category>
-              
+
             </resume-column>
         </resume-body>
     </resume>
 
 
-</body></html>
+</body>
+
+</html>

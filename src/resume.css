@@ -35,8 +35,9 @@ h1, h2, h3, h4, h5, h6, p, a, li, span {
   text-align: center;
 }
 .resume .main .header .header-icons .page-subhead {
-  margin: 1rem 15px;
+  margin: 1rem 4px;
   display: inline;
+  font-size: 15px;
 }
 .resume .main .header .fa {
   padding-right: 10px;
@@ -52,7 +53,6 @@ h1, h2, h3, h4, h5, h6, p, a, li, span {
   padding-left: 5px;
   padding-right: 10px;
   border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
 }
 .resume .main .category-row .category-row-title {
   margin: 0.4rem 0;
@@ -61,12 +61,12 @@ h1, h2, h3, h4, h5, h6, p, a, li, span {
 .resume .main .category-row .category-title,
 .resume .main .category-row .category-subtitle {
   display: inline;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 5px;
 }
 
 .resume .main .category-row .category-bullets {
-  margin-top: 5px;
+  margin-top: 0px;
 }
 .resume .main .category-row p,
 .resume .main .category-row li {
@@ -89,3 +89,8 @@ a.page-subhead {
   color: initial;
   text-decoration: none;
 }
+
+a:link { color: #000000; text-decoration: none}
+a:visited { color: #000000; text-decoration: none}
+a:hover { color: #3366CC; text-decoration: underline}
+a:active { color: #000000; text-decoration: none}
