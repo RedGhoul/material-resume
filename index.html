@@ -1,244 +1,203 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Resume</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css"
-    />
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:500,200,700"
-      rel="stylesheet"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Resume</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css"/>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
 
-    <link href="src/resume.css" rel="stylesheet" />
-    <script src="src/resume.js"></script>
-  </head>
+        <link href="src/resume.css" rel="stylesheet"/>
+        <script src="src/resume.js"></script>
+    </head>
 
-  <body ng-app="Resume" ng-cloak="">
-    <resume>
-      <resume-heading
-        website="avaneesa.me"
-        first-name="Avaneesa"
-        last-name="Basappa"
-        linkedin="Avaneesa"
-        github="RedGhoul"
-        email="avaneesab5@gmail.com"
-        phone="289-946-2595"
-      >
-      </resume-heading>
-      <resume-body>
-        <resume-column flex="5"> </resume-column>
-        <resume-column flex="95">
-          <category name="Professional Experience">
-            <category-item
-              title="Full-Stack Developer"
-              subtitle="Indellient Inc. - (Jun 2019 – Feb 2020)"
-            >
-              <li>
-                Designed and developed applications using ASP.NET Core MVC,
-                Spring Boot, and Postgresql, on AWS.
-              </li>
-              <li>
-                Wrote high performance C# code resulting in a 50% reduction in
-                memory usage and 3x speed increase.
-              </li>
-              <li>
-                Maintained and deployed new and existing applications using
-                Docker, TerraForm, Jenkins, and Power Shell on AWS.
-              </li>
-              <li>
-                Rewrote and refactored backend micro-services to interact with
-                mainframe systems and AWS.
-              </li>
-              <li>
-                Wrote and maintained testing harness for various applications
-                using Xunit, and Junit.
-              </li>
-              <li>
-                Implemented and deployed Elasticsearch, Log Stash, and Kibana to
-                ingest logs across micro-services, and record metrics across app
-                instances, and AWS regions.
-              </li>
-              <li>
-                Participated and collaborated in Code Reviews using GITHUB,
-                JIRA, and Agile Processes.
-              </li>
-            </category-item>
-            <category-item
-              title="Software Development Intern"
-              subtitle="IBM Digital Commerce - IBM Inc (May 2017 - Aug 2018)"
-            >
-              <li>
-                Created an automated regression testing system using Docker,
-                Selenium, and Concourse CI.
-              </li>
-              <li>
-                Participated and collaborated in Code Reviews using GITLAB and
-                Agile Processes.
-              </li>
-              <li>
-                Created end to end features using Angular and Java EE to
-                interact with DB2.
-              </li>
-              <li>
-                Researched and implemented an Angular 1.x to 4.x transtion plan
-                for migrating legacy applications.
-              </li>
-              <li>
-                Reduced cross platform testing time by 30% by implementing a
-                multithreaded framework to run JUnit tests in parallel.
-              </li>
-              <li>
-                Provided production DevOps support to live customers using
-                DC/OS, UCD, and Grey Log.
-              </li>
-              <li>
-                Increased error detection by 50% by creating a exception based
-                class hierarchy, to handle UI errors.
-              </li>
-            </category-item>
-            <category-item
-              title="Software Development Intern"
-              subtitle="Power Systems IT - Hydro One Networks Inc (Jan–Aug,2016)"
-            >
-              <li>
-                Consolidated several Web APIs, resulting in a 30% reduction in
-                queries to ORACLE cluster, using WEB API 2 and C#.
-              </li>
-              <li>
-                Developed in-house software testing tools using C# and Selenium
-                to automate 40% of all functional UI testing.
-              </li>
-              <li>
-                Maintained a number of Microsoft Azure services such as
-                "Application Insights" and "App Service", to manage and monitor
-                deployment processes.
-              </li>
-            </category-item>
-          </category>
-          <category name="Education">
-            <category-item
-              title="University of Ontario Institute of Technology"
-            >
-              <li>
-                Electrical Engineering - Bachelor of Engineering - Graduated
-                April - 2019
-              </li>
-            </category-item>
-          </category>
-          <category name="Skills">
-            <category-item title="Technologies">
-              <li>
-                <strong>Languages</strong> Java \ C# \ JavaScript \ Python
-              </li>
-              <li>
-                <strong>Frameworks</strong> REACT \ Angular \ ASP.NET MVC \
-                Spring Boot \ Express.js \ JQuery
-              </li>
-              <li>
-                <strong>Databases</strong> PostgreSQL \ MSSQL \ Redis \ MongoDB
-              </li>
-              <li>
-                <strong>Cloud Providers</strong> AWS \ AZURE \ Digital Ocean
-              </li>
-            </category-item>
-          </category>
-          <category name="Projects">
-            <category-item
-              title="Job Transparency"
-              subtitle="The Pinterest For Jobs"
-            >
-              <li>
-                A Job Hunting CMS, designed to make finding a job easier and
-                stream lined, by centralizing job postings, and allowing the
-                applier to keep track of everything they apply to.
-              </li>
-              <li>
-                Used C#, ASP.NET MVC, and MYSQL. Hosted on Digital Ocean using
-                Docker Swarm.
-              </li>
-              <li>
-                Used Python, Flask, Azure Functions, and NLTK for micro service
-                features.
-              </li>
-              <li>
-                Live URL -
-                <a href="https://www.jobtransparency.com/"
-                  >https://www.jobtransparency.com/</a
-                >
-              </li>
-              <li>
-                GitHub Repo -
-                <a href="https://github.com/RedGhoul/JobTransparency"
-                  >https://github.com/RedGhoul/JobTransparency</a
-                >
-              </li>
-            </category-item>
-            <category-item
-              title="Coding Interview Cards"
-              subtitle="A easy and proactive way to get ready for your next interview"
-            >
-              <li>
-                A trivia style way to get ready for your interview. By asking
-                bit sized CS fundamentals questions.
-              </li>
-              <li>
-                Written with C# using .NET Core and MYSQL. Hosted on Digital
-                Ocean using Docker Swarm and NginX.
-              </li>
-              <li>
-                Live URL -
-                <a href="https://www.codinginterviewcards.com/"
-                  >https://www.codinginterviewcards.com/</a
-                >
-              </li>
-              <li>
-                GitHub Repo -
-                <a href="https://github.com/RedGhoul/CodingCards"
-                  >https://github.com/RedGhoul/CodingCards</a
-                >
-              </li>
-            </category-item>
-            <category-item
-              title="Portfolio CMS"
-              subtitle="A easy and simple way to build your personal site"
-            >
-              <li>
-                Implements the most basic features of a CMS to easily organize
-                and update my CV, as well as manage my show case of projects
-              </li>
-              <li>
-                Written with JavaScript using Node.js, Express.js, React, and
-                MongoDB. Hosted on Digital Ocean using Docker Swarm.
-              </li>
-              <li>
-                Live URL -
-                <a href="http://www.avaneesa.me/">http://www.avaneesa.me/</a>
-              </li>
-              <li>
-                GitHub Repo -
-                <a href="https://github.com/RedGhoul/PortfolioNodeWebsite"
-                  >https://github.com/RedGhoul/PortfolioNodeWebsite</a
-                >
-              </li>
-            </category-item>
-          </category>
-        </resume-column>
-      </resume-body>
-    </resume>
-  </body>
+    <body ng-app="Resume" ng-cloak="">
+        <resume>
+            <resume-heading website="avaneesa.me" first-name="Avaneesa" last-name="Basappa" linkedin="Avaneesa" github="RedGhoul" email="avaneesab5@gmail.com" phone="289-946-2595"></resume-heading>
+            <resume-body>
+                <resume-column flex="5"></resume-column>
+                <resume-column flex="95">
+                    <category name="Professional Experience">
+                        <category-item title="Full-Stack Developer" subtitle="Indellient Inc. - (Jun 2019 – Feb 2020)">
+                            <li>
+                                Designed and developed applications using ASP.NET Core MVC,
+                                                                                Spring Boot, and Postgresql, on AWS.
+                            </li>
+                            <li>
+                                Wrote high performance C# code resulting in a 50% reduction in
+                                                                                memory usage and 3x speed increase.
+                            </li>
+                            <li>
+                                Maintained and deployed new and existing applications using
+                                                                                Docker, TerraForm, Jenkins, and Power Shell on AWS.
+                            </li>
+                            <li>
+                                Rewrote and refactored backend micro-services to interact with
+                                                                                mainframe systems and AWS.
+                            </li>
+                            <li>
+                                Wrote and maintained testing harness for various applications
+                                                                                using Xunit, and Junit.
+                            </li>
+                            <li>
+                                Implemented and deployed Elasticsearch, Log Stash, and Kibana to
+                                                                                ingest logs across micro-services, and record metrics across app
+                                                                                instances, and AWS regions.
+                            </li>
+                            <li>
+                                Participated and collaborated in Code Reviews using GITHUB,
+                                                                                JIRA, and Agile Processes.
+                            </li>
+                        </category-item>
+                        <category-item title="Software Development Intern" subtitle="IBM Digital Commerce - IBM Inc (May 2017 - Aug 2018)">
+                            <li>
+                                Created an automated regression testing system using Docker,
+                                                                                Selenium, and Concourse CI.
+                            </li>
+                            <li>
+                                Participated and collaborated in Code Reviews using GITLAB and
+                                                                                Agile Processes.
+                            </li>
+                            <li>
+                                Created end to end features using Angular and Java EE to
+                                                                                interact with DB2.
+                            </li>
+                            <li>
+                                Researched and implemented an Angular 1.x to 4.x transtion plan
+                                                                                for migrating legacy applications.
+                            </li>
+                            <li>
+                                Reduced cross platform testing time by 30% by implementing a
+                                                                                multithreaded framework to run JUnit tests in parallel.
+                            </li>
+                            <li>
+                                Provided production DevOps support to live customers using
+                                                                                DC/OS, UCD, and Grey Log.
+                            </li>
+                            <li>
+                                Increased error detection by 50% by creating a exception based
+                                                                                class hierarchy, to handle UI errors.
+                            </li>
+                        </category-item>
+                        <category-item title="Software Development Intern" subtitle="Power Systems IT - Hydro One Networks Inc (Jan–Aug,2016)">
+                            <li>
+                                Consolidated several Web APIs, resulting in a 30% reduction in
+                                                                                queries to ORACLE cluster, using WEB API 2 and C#.
+                            </li>
+                            <li>
+                                Developed in-house software testing tools using C# and Selenium
+                                                                                to automate 40% of all functional UI testing.
+                            </li>
+                            <li>
+                                Maintained a number of Microsoft Azure services such as
+                                                                                "Application Insights" and "App Service", to manage and monitor
+                                                                                deployment processes.
+                            </li>
+                        </category-item>
+                        <category-item title="Software Development Intern" subtitle="Lines Engineering - Hydro One Networks Inc(Sept-Dec,2015)">
+                            <li>Developed tools to predict the extent of corrosion on transmission towers using localized weather data with a 90% accuracy</li>
+                            <li>Created in-house fuzzy logic software using C# & WinForms to assist engineers and asset managers with transmission line maintenance and design resulting in a 15% material use reduction</li>
+                            <li>Worked on guidelines for non-destructive inexpensive asset management methods to serve as a screening method to reduce maintenance by 80%</li>
+                        </category-item>
+                    </category>
+                    <category name="Education">
+                        <category-item title="University of Ontario Institute of Technology">
+                            <li>
+                                Electrical Engineering - Bachelor of Engineering - Graduated
+                                                                                April - 2019
+                            </li>
+                        </category-item>
+                    </category>
+                    <category name="Skills">
+                        <category-item title="Technologies">
+                            <li>
+                                <strong>Languages</strong>
+                                Java \ C# \ JavaScript \ Python
+                            </li>
+                            <li>
+                                <strong>Frameworks</strong>
+                                REACT \ Angular \ ASP.NET MVC \
+                                                                                Spring Boot \ Express.js \ JQuery
+                            </li>
+                            <li>
+                                <strong>Databases</strong>
+                                PostgreSQL \ MSSQL \ Redis \ MongoDB
+                            </li>
+                            <li>
+                                <strong>Cloud Providers</strong>
+                                AWS \ AZURE \ Digital Ocean
+                            </li>
+                        </category-item>
+                    </category>
+                    <category name="Projects">
+                        <category-item title="Job Transparency" subtitle="The Pinterest For Jobs">
+                            <li>
+                                A Job Hunting CMS, designed to make finding a job easier and
+                                                                                stream lined, by centralizing job postings, and allowing the
+                                                                                applier to keep track of everything they apply to.
+                            </li>
+                            <li>
+                                Used C#, ASP.NET MVC, and MYSQL. Hosted on Digital Ocean using
+                                                                                Docker Swarm.
+                            </li>
+                            <li>
+                                Used Python, Flask, Azure Functions, and NLTK for micro service
+                                                                                features.
+                            </li>
+                            <li>
+                                Live URL -
+                                <a href="https://www.jobtransparency.com/">https://www.jobtransparency.com/</a>
+                            </li>
+                            <li>
+                                GitHub Repo -
+                                <a href="https://github.com/RedGhoul/JobTransparency">https://github.com/RedGhoul/JobTransparency</a>
+                            </li>
+                        </category-item>
+                        <category-item title="Coding Interview Cards" subtitle="A easy and proactive way to get ready for your next interview">
+                            <li>
+                                A trivia style way to get ready for your interview. By asking
+                                                                                bit sized CS fundamentals questions.
+                            </li>
+                            <li>
+                                Written with C# using .NET Core and MYSQL. Hosted on Digital
+                                                                                Ocean using Docker Swarm and NginX.
+                            </li>
+                            <li>
+                                Live URL -
+                                <a href="https://www.codinginterviewcards.com/">https://www.codinginterviewcards.com/</a>
+                            </li>
+                            <li>
+                                GitHub Repo -
+                                <a href="https://github.com/RedGhoul/CodingCards">https://github.com/RedGhoul/CodingCards</a>
+                            </li>
+                        </category-item>
+                        <category-item title="Portfolio CMS" subtitle="A easy and simple way to build your personal site">
+                            <li>
+                                Implements the most basic features of a CMS to easily organize
+                                                                                and update my CV, as well as manage my show case of projects
+                            </li>
+                            <li>
+                                Written with JavaScript using Node.js, Express.js, React, and
+                                                                                MongoDB. Hosted on Digital Ocean using Docker Swarm.
+                            </li>
+                            <li>
+                                Live URL -
+                                <a href="http://www.avaneesa.me/">http://www.avaneesa.me/</a>
+                            </li>
+                            <li>
+                                GitHub Repo -
+                                <a href="https://github.com/RedGhoul/PortfolioNodeWebsite">https://github.com/RedGhoul/PortfolioNodeWebsite</a>
+                            </li>
+                        </category-item>
+                    </category>
+                </resume-column>
+            </resume-body>
+        </resume>
+    </body>
 </html>
